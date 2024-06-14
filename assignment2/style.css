@@ -1,0 +1,97 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: floralwhite;
+}
+/* Set font styles */
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Berlin Sans FB";
+}
+
+p, a, li, label {
+    font-family: "Book Antiqua";
+    font-size: 20px;
+}
+/* styling Header */
+header {
+    height: 125px;
+    background-color: darkseagreen;
+    padding: 20px 25px 2px 20px;
+    text-align: center;
+}
+
+/* styling Logo */
+div > a > img {
+    width: 130px;
+    height: 110px;
+    float: left;
+}
+
+/* styling Main section */
+main {
+    width: 90%;
+    float: left;
+}
+
+main > section {
+    padding: 5%;
+    clear: both;
+}
+
+main > section > div {
+    width: 50%;
+    margin: auto;
+}
+
+main > section > div > form {
+    width: 100%;
+}
+
+main > section > div > form > input[type="text"],
+main > section > div > form > input[type="email"],
+main > section > div > form > input[type="number"] {
+    border: solid 2px black;
+    margin-bottom: 15px;
+    width: 100%;
+    padding: 10px 5px;
+}
+
+main > section > div > form > input[type="submit"] {
+    border: solid 2px black;
+    background-color: darkseagreen;
+    color: black;
+    padding: 10px 35px;
+    font-size: 20px;
+}
+
+/* styling Pizza images */
+aside {
+    width: 30%;
+    float: left;
+    margin-right: 20px;
+}
+
+aside > article {
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+aside article img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* styling Footer*/
+footer {
+    background-color: darkseagreen;
+    padding: 20px 0;
+    text-align: center;
+    clear: both;
+}
+
+footer > div > a > img {
+    width: 100px;
+    height: 70px;
+    float: left;
+}

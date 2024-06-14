@@ -1,0 +1,205 @@
+<!doctype html>
+<html lang = "en">
+<!-- metadata -->
+<head>
+    <meta charset = "utf-8">
+    <meta name = "viewport" content = "width=device-width,initial-scale=1">
+    <meta name = "description" content = "assignment 2">
+    <meta name = "robots" content = "noindex,nofollow">
+    <title>THE PIZZA WAGON</title>
+    <!-- add our css file -->
+    <link rel = "stylesheet" href = "./style.css">
+</head>
+<body>
+<header>
+    <!-- a div for the logo container -->
+    <div>
+        <a href = "index.html"><img src="./image/logo.jpeg" alt= "logo header"></a>
+    </div>
+<!-- add a section for masthead -->
+<section>
+    <h1>WELCOME TO THE PIZZA WAGON!!</h1>
+</section>
+</header>
+<main>
+    <!-- links -->
+    <menu>
+        <li><a href="#">gift cards</a></li>
+        <li><a href="#">contact us+ FAQ</a></li>
+        <li><a href="#">join our team</a></li>
+    </menu>
+    <!-- images and figcaption for best sellers -->
+    <div>
+        <label>BEST SELLERS</label>
+    </div>
+    <aside>
+        <article>
+            <figure>
+                <img src="./image/Pizza%20ai%20funghi.jpeg" alt="image">
+                <figcaption>
+                    PIZZA AI FUNGHI
+                </figcaption>
+            </figure>
+        </article>
+    </aside>
+    <aside>
+        <article>
+            <figure>
+                <img src="./image/Pizza%20capricciosa.jpeg" alt="image">
+                <figcaption>
+                    PIZZA CAPRICCIOSA
+                </figcaption>
+            </figure>
+        </article>
+    </aside>
+    <aside>
+        <article>
+            <figure>
+                <img src="./image/Pizza%20Diabola.jpeg" alt="image">
+                <figcaption>
+                    PIZZA DIABOLA
+                </figcaption>
+            </figure>
+        </article>
+    </aside>
+    <aside>
+        <article>
+            <figure>
+                <img src="./image/Pizzeria%20Popolare.jpeg" alt="image">
+                <figcaption>
+                    PIZZA POPOLARE
+                </figcaption>
+            </figure>
+        </article>
+    </aside>
+    <aside>
+        <article>
+            <figure>
+                <img src="./image/pizza%20margherita.jpeg" alt="image">
+                <figcaption>
+                    PIZZA MARGHERITA
+                </figcaption>
+            </figure>
+        </article>
+    </aside>
+    <aside>
+        <article>
+            <figure>
+                <img src="./image/Pizza.jpeg" alt="image">
+                <figcaption>
+                    PIZZA ROASTED CHERRY TOMATO
+                </figcaption>
+            </figure>
+        </article>
+    </aside>
+    <section>
+        <!-- this is my form container -->
+        <div>
+            <form action ="order.php" method ="post" enctype="multipart/form-data">
+                <h2>order your pizza!</h2>
+                <label> your name (required)</label>
+                <br>
+                <label>
+                <input type="text" name ="name" required>
+                </label>
+                <br>
+                <br>
+                <label>your email</label>
+                <br>
+                <label>
+                <input type="email" name="email" required placeholder="*your email">
+                </label>
+                <br>
+                <br>
+                <label>any bestsellers?</label>
+                <br>
+                <input type="checkbox" id="PIZZA AI FUNGHI" name="best sellers" value="PIZZA AI FUNGHI">
+                <label for="PIZZA AI FUNGHI">Pizza ai funghi</label>
+                <br>
+                <input type="checkbox" id="PIZZA CAPRICCIOSA" name="best sellers" value="PIZZA CAPRICCIOSA">
+                <label for="PIZZA CAPRICCIOSA">Pizza capricciosa</label>
+                <br>
+                <input type="checkbox" id="PIZZA DIABOLA" name="best sellers" value="PIZZA DIABOLA">
+                <label for="PIZZA DIABOLA">Pizza diabola</label>
+                <br>
+                <input type="checkbox" id="PIZZA POPOLARE" name="best sellers" value="PIZZA POPOLARE">
+                <label for="PIZZA POPOLARE">Pizza popolare</label>
+                <br>
+                <input type="checkbox" id="PIZZA MARGHERITA" name="best sellers" value="PIZZA MARGHERITA">
+                <label for="PIZZA MARGHERITA">Pizza margherita</label>
+                <br>
+                <input type="checkbox" id="PIZZA ROASTED CHERRY TOMATO" name="best sellers" value="PIZZA ROASTED CHERRY TOMATO">
+                <label for="PIZZA ROASTED CHERRY TOMATO">Pizza roasted cherry tomato</label>
+                <br>
+                <br>
+                <label>no of pizza</label>
+                <br>
+                <label>
+                <input type="number" name="quantity" min="1" max="100">
+                </label>
+                <br>
+                <br>
+                <label>select size</label>
+                <br>
+                <input type="radio" id="small" name="size" value="small">
+                <label for="small">small</label>
+                <br>
+                <input type="radio" id="medium" name="size" value="medium">
+                <label for="medium">medium</label>
+                <br>
+                <input type="radio" id="large" name="size" value="large">
+                <label for="large">large</label>
+                <br>
+                <br>
+                <label>select crust type</label>
+                <br>
+                <input type="radio" id="thick" name="crust" value="thick">
+                <label for="thick">thick</label>
+                <br>
+                <input type="radio" id="thin" name="crust" value="thin">
+                <label for="thin">thin</label>
+                <br>
+                <br>
+                <label>choose toppings</label>
+                <br>
+                <input type="checkbox" id="pepperoni" name="toppings" value="pepperoni">
+                <label for="pepperoni">pepperoni</label>
+                <br>
+                <input type="checkbox" id="onions" name="toppings" value="onions">
+                <label for="onions">onions</label>
+                <br>
+                <input type="checkbox" id="beef" name="toppings" value="beef">
+                <label for="beef">beef</label>
+                <br>
+                <input type="checkbox" id="chicken" name="toppings" value="chicken">
+                <label for="chicken">chicken</label>
+                <br>
+                <input type="checkbox" id="cheese" name="toppings" value="cheese">
+                <label for="cheese">cheese</label>
+                <br>
+                <br>
+                <label>phone number</label>
+                <br>
+                <label>
+                <input type="tel" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
+                </label>
+                <br>
+                <br>
+                <input type="submit" value="place order">
+                <br>
+            </form>
+        </div>
+    </section>
+</main>
+<!-- footer -->
+<footer>
+    <div>
+        <a href="index.html"><img src="./image/logo.jpeg" alt="footer logo"></a>
+    </div>
+    <section>
+        <h2>THANK YOU! VISIT AGAIN!</h2>
+    </section>
+</footer>
+</body>
+</html>
+
